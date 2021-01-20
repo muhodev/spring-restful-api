@@ -1,6 +1,7 @@
 package com.restfulservices.main.controller;
 
 import com.restfulservices.main.model.request.UserDetailsRequestModel;
+import com.restfulservices.main.model.response.UserRest;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -12,8 +13,8 @@ public class UserController {
     }
 
     @PostMapping
-    public String createUser(@RequestBody UserDetailsRequestModel userDetails) {
-        return "create user";
+    public UserRest createUser(@RequestBody UserDetailsRequestModel userDetails) {
+        return null;
 
     }
 
